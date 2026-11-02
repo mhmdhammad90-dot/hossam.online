@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="CollieH Collection | كوليه كوليكشن — قلادات، أساور، خواتم وأطقم مختارة. اطلبي قطعتك مباشرة عبر واتساب.">
+<meta name="theme-color" content="#141210">
+<meta property="og:title" content="CollieH Collection | كوليه كوليكشن">
+<meta property="og:description" content="قلادات، أساور، خواتم وأطقم مختارة. اطلبي قطعتك مباشرة عبر واتساب.">
+<meta property="og:image" content="assets/hero-main.webp">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<title>CollieH Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Jost:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+<style>
+/* Layout: a boutique built on the brand's arch — every photo sits in an arch window like the logo frame. Satin-white pages, noir bands for story and contact, brushed gold used only as hairlines and accents. */
+:root{
+  --bg:#F7F6F4;
+  --paper:#FFFFFF;
+  --ink:#141210;
+  --ink-2:#5F5952;
+  --ink-3:#958D84;
+  --line:#E6E1DA;
+  --noir:#141210;
+  --noir-2:#1E1B18;
+  --gold:#A47D3D;
+  --gold-2:#D9BD84;
+  --gold-grad:linear-gradient(100deg,#8C6A35 0%,#E3CB93 38%,#A57E40 62%,#EAD5A4 100%);
+  --emerald:#0E5A44;
+  --f-ar-display:"El Messiri","Noto Naskh Arabic",Tahoma,serif;
+  --f-ar:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
+  --f-serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --f-label:"Jost","Segoe UI",Arial,sans-serif;
+  --arch:999px 999px 0 0;
+  --wrap:1280px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ar);font-size:17px;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:1.5px solid var(--gold);outline-offset:3px}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-family:var(--f-ar-display);font-weight:600;line-height:1.35;text-wrap:balance}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.lat{font-family:var(--f-serif);direction:ltr;unicode-bidi:isolate}
+.label{font-family:var(--f-label);font-size:12px;letter-spacing:.24em;text-transform:uppercase;direction:ltr;unicode-bidi:isolate;color:var(--gold)}
+.gold-text{background:var(--gold-grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+.rule{display:inline-flex;align-items:center;gap:14px}
+.rule::before,.rule::after{content:"";width:34px;height:1px;background:currentColor;opacity:.6}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--ink);background:var(--ink);color:#fff;font-family:var(--f-ar);font-weight:500;font-size:15.5px;padding:14px 30px;border-radius:0;transition:background .3s,color .3s,border-color .3s;white-space:nowrap}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-gold{background:transparent;border-color:var(--gold-2);color:var(--gold-2)}
+.btn-gold:hover{background:var(--gold-2);color:var(--noir)}
+.link{font-size:15px;border-bottom:1px solid currentColor;padding-bottom:2px}
+
+/* top bar */
+.topbar{background:var(--noir);color:#E9E4DC;font-size:13px}
+.topbar .wrap{display:flex;justify-content:center;gap:28px;padding-block:9px;flex-wrap:wrap}
+.topbar .lat{font-style:italic;color:var(--gold-2)}
+@media (max-width:600px){.topbar .lat{display:none}.topbar .wrap{padding-block:7px}}
+
+/* header */
+.head{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.head-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;padding-block:12px}
+.nav{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav a{font-size:15px;color:var(--ink-2);position:relative;padding-block:4px}
+.nav a::after{content:"";position:absolute;inset:auto 0 0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after{transform:scaleX(1)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:34px;height:auto}
+.wm{display:flex;flex-direction:column;align-items:center;line-height:1}
+.wm .en{font-family:var(--f-serif);font-size:24px;letter-spacing:.01em;direction:ltr}
+.wm .en b{font-weight:400;color:var(--gold)}
+.wm .ar{font-family:var(--f-ar);font-weight:300;font-size:12.5px;color:var(--ink-2);margin-top:5px;letter-spacing:0}
+.actions{display:flex;justify-content:flex-end;gap:6px}
+.icon-btn{position:relative;display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:8px 10px;font-size:14.5px;color:var(--ink)}
+.icon-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.3}
+.count{min-width:19px;height:19px;border-radius:99px;background:var(--ink);color:#fff;font-family:var(--f-label);font-size:11px;display:inline-grid;place-items:center;padding-inline:5px}
+.count[data-n="0"]{background:var(--line);color:var(--ink-2)}
+@media (max-width:900px){
+  .head-in{grid-template-columns:auto 1fr auto;padding-block:10px}
+  .nav{display:none}
+  .brand{justify-content:center}
+  .wm .en{font-size:20px}
+  .icon-btn .txt{display:none}
+  .menu-row{display:flex}
+}
+.menu-row{display:none;gap:22px;overflow-x:auto;padding-block:0 10px;scrollbar-width:none;font-size:14.5px;color:var(--ink-2);white-space:nowrap}
+.menu-row::-webkit-scrollbar{display:none}
+
+/* hero */
+.hero{position:relative;padding-block:56px 72px;overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:26px;min-width:0}
+.hero h1{font-size:clamp(40px,5.4vw,74px);line-height:1.22;font-weight:600}
+.hero h1 .gold-text{animation:sheen 7s ease-in-out infinite}
+@keyframes sheen{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+.hero .tag{font-family:var(--f-serif);font-style:italic;font-size:clamp(20px,2vw,26px);color:var(--ink-2);direction:ltr;text-align:right}
+.hero .lead{color:var(--ink-2);max-width:30em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero-meta{display:flex;gap:34px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px;margin-top:6px}
+.hero-meta div{display:flex;flex-direction:column}
+.hero-meta b{font-family:var(--f-ar-display);font-weight:500;font-size:19px}
+.hero-meta span{font-size:13.5px;color:var(--ink-3)}
+
+.arches{position:relative;min-width:0;height:640px}
+.arch{position:absolute;overflow:hidden;border-radius:var(--arch);background:var(--paper)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.backdrop{position:absolute;inset:-26px 15% 110px 19%;background:var(--noir);border-radius:var(--arch);animation:fadeIn 1.2s ease .2s both}
+.a-main{inset:0 22% 0 12%;box-shadow:0 50px 80px -40px rgba(20,18,16,.5);animation:wipe 1.4s cubic-bezier(.7,0,.2,1) both}
+.a-main{animation:none}.a-main::before{animation:wipe 1.4s cubic-bezier(.7,0,.2,1) both}
+.a-sm1{width:30%;aspect-ratio:3/4;max-width:100%;left:0;bottom:6%;z-index:2;border:6px solid var(--bg);}
+.a-sm1::before{animation:wipe 1.2s cubic-bezier(.7,0,.2,1) .35s both}
+.a-sm2{width:27%;aspect-ratio:3/4.4;max-width:100%;right:0;top:9%;z-index:2;border:6px solid var(--bg);}
+.a-sm2::before{animation:wipe 1.2s cubic-bezier(.7,0,.2,1) .55s both}
+.outline{position:absolute;inset:-18px 25% 18px 5%;border:1px solid var(--gold-2);border-radius:var(--arch);border-bottom:0;pointer-events:none;animation:fadeIn 1.6s ease .9s both}
+.spark{position:absolute;z-index:3;width:14px;height:14px;animation:twinkle 3.2s ease-in-out infinite}
+.spark::before,.spark::after{content:"";position:absolute;inset:0;margin:auto;background:var(--gold);border-radius:2px}
+.spark::before{width:100%;height:1.5px}
+.spark::after{width:1.5px;height:100%}
+.s1{top:6%;left:16%;animation-delay:1.4s}.s2{bottom:30%;right:6%;width:10px;height:10px;animation-delay:2.4s}.s3{top:46%;left:40%;width:9px;height:9px;animation-delay:3s}
+.arch::before{content:"";position:absolute;inset:0;z-index:1;background:var(--bg);transform-origin:50% 0;transform:scaleY(0)}
+@keyframes wipe{from{transform:scaleY(1)}to{transform:scaleY(0)}}
+@keyframes settle{from{transform:scale(1.18)}to{transform:none}}
+@keyframes fadeIn{from{opacity:0}}
+@keyframes twinkle{0%,100%{transform:scale(.4) rotate(0);opacity:.2}50%{transform:scale(1) rotate(45deg);opacity:1}}
+.seal{position:absolute;z-index:4;left:6%;top:4%;width:118px;height:118px;border-radius:50%;background:var(--noir);color:var(--gold-2);display:grid;place-items:center;animation:fadeIn 1s ease 1.2s both}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
+.seal img{width:40px;position:relative}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:960px){
+  .hero-in{grid-template-columns:1fr;gap:36px}
+  .arches{height:520px;order:-1}
+  .hero{padding-block:28px 56px}
+}
+@media (max-width:520px){
+  .arches{height:430px}
+  .a-main{inset:0 14% 0 6%}
+  .backdrop{inset:-18px 8% 90px 12%}
+  .seal{width:92px;height:92px;left:0}
+  .seal img{width:26px}
+  .hero-meta{gap:22px}
+}
+
+/* categories */
+.cats{border-block:1px solid var(--line);background:var(--paper)}
+.cats-in{display:grid;grid-template-columns:repeat(4,1fr)}
+.cat{display:flex;align-items:center;gap:18px;padding:22px 26px;border-inline-start:1px solid var(--line);background:none;border-block:0;border-inline-end:0;text-align:start;transition:background .3s}
+.cat:first-child{border-inline-start:0}
+.cat:hover{background:var(--bg)}
+.cat .th{width:62px;height:76px;flex:none;border-radius:var(--arch);overflow:hidden;background:var(--bg)}
+.cat .th img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.cat:hover .th img{transform:scale(1.08)}
+.cat b{display:block;font-family:var(--f-ar-display);font-weight:500;font-size:19px;line-height:1.3}
+.cat span{font-family:var(--f-serif);font-style:italic;font-size:14px;color:var(--ink-3)}
+@media (max-width:900px){.cats-in{grid-template-columns:repeat(2,1fr)}.cat:nth-child(3){border-inline-start:0}.cat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media (max-width:480px){.cat{padding:16px 14px;gap:12px}.cat .th{width:48px;height:60px}.cat b{font-size:17px}}
+
+/* section heads */
+section{padding-block:104px}
+.sec-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;margin-bottom:46px}
+.sec-head h2{font-size:clamp(32px,3.8vw,50px)}
+.sec-head p{color:var(--ink-2);max-width:34em}
+@media (max-width:700px){section{padding-block:72px}}
+
+/* filters + grid */
+.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:40px}
+.chip{background:none;border:1px solid var(--line);padding:8px 20px;font-size:15px;color:var(--ink-2);transition:all .25s}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:48px 24px}
+.card{display:flex;flex-direction:column;gap:14px;min-width:0}
+.card .ph{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:var(--arch);overflow:hidden;background:var(--paper);border:0;padding:0;width:100%}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.06)}
+.card .ph::after{content:"";position:absolute;inset:10px;border-radius:var(--arch);border:1px solid rgba(255,255,255,.75);border-bottom:0;pointer-events:none;opacity:0;transition:opacity .4s}
+.card:hover .ph::after{opacity:1}
+.card .qv{position:absolute;inset:auto 14px 14px;background:rgba(255,255,255,.94);font-size:14px;padding:9px;text-align:center;opacity:0;translate:0 8px;transition:opacity .3s,translate .3s}
+.card:hover .qv,.card .ph:focus-visible .qv{opacity:1;translate:0 0}
+.card .meta{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card h3{font-size:20px;font-weight:500;line-height:1.35}
+.card .en{font-family:var(--f-serif);font-style:italic;font-size:14.5px;color:var(--ink-3);direction:ltr;unicode-bidi:isolate}
+.card .tone{font-size:13.5px;color:var(--ink-2)}
+.add{flex:none;width:38px;height:38px;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;transition:all .25s}
+.add svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.4;fill:none}
+.add:hover{border-color:var(--ink)}
+.add[data-in="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.price{font-size:13px;color:var(--gold);font-weight:500}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.grid{grid-template-columns:repeat(2,1fr);gap:34px 14px}.card h3{font-size:17px}.card .qv{display:none}}
+
+/* story */
+.story{background:var(--noir);color:#EEE9E1}
+.story-in{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.story .ph{position:relative;aspect-ratio:4/5;max-width:520px;width:100%;justify-self:center}
+.story .ph .frame{position:absolute;inset:0;border-radius:var(--arch);overflow:hidden}
+.story .ph .frame img{width:100%;height:100%;object-fit:cover}
+.story .ph::before{content:"";position:absolute;inset:-16px;border:1px solid rgba(217,189,132,.45);border-radius:var(--arch);border-bottom:0}
+.story-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.story h2{font-size:clamp(34px,4vw,56px)}
+.story p{color:#BDB5AA;max-width:32em}
+.pattern{display:flex;gap:18px;align-items:center;color:var(--gold-2);font-size:14px}
+.pattern svg{width:120px;height:28px;stroke:var(--gold-2);fill:none;stroke-width:1.2}
+.variants{display:flex;gap:10px;flex-wrap:wrap}
+.var{display:inline-flex;align-items:center;gap:10px;background:none;border:1px solid rgba(238,233,225,.25);color:#EEE9E1;padding:9px 18px;font-size:15px;transition:border-color .25s}
+.var i{width:14px;height:14px;border-radius:50%;border:1px solid rgba(255,255,255,.4)}
+.var:hover{border-color:var(--gold-2)}
+.var[aria-pressed="true"]{border-color:var(--gold-2);color:var(--gold-2)}
+@media (max-width:900px){.story-in{grid-template-columns:1fr;gap:56px}.story .ph{max-width:420px}}
+
+/* promise */
+.promise{padding-block:64px;border-bottom:1px solid var(--line)}
+.promise-in{display:grid;grid-template-columns:repeat(3,1fr)}
+.pr{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:10px 28px;border-inline-start:1px solid var(--line)}
+.pr:first-child{border-inline-start:0}
+.pr svg{width:34px;height:34px;stroke:var(--gold);fill:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+.pr h3{font-size:20px;font-weight:500}
+.pr p{font-size:15px;color:var(--ink-2);max-width:20em}
+@media (max-width:760px){.promise-in{grid-template-columns:1fr;gap:28px}.pr{border:0}}
+
+/* looks gallery */
+.looks{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.look{aspect-ratio:1;max-width:100%;overflow:hidden;position:relative;background:var(--paper);border:0;padding:0}
+.look img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.look:hover img{transform:scale(1.07)}
+.look::after{content:"";position:absolute;inset:0;background:rgba(20,18,16,.0);transition:background .4s}
+.look:hover::after{background:rgba(20,18,16,.12)}
+@media (max-width:760px){.looks{grid-template-columns:repeat(3,1fr);gap:6px}}
+
+/* contact band */
+.contact{background:var(--noir);color:#EEE9E1;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;width:520px;height:640px;max-width:90%;left:50%;top:60px;translate:-50% 0;border:1px solid rgba(217,189,132,.22);border-radius:var(--arch);border-bottom:0;pointer-events:none}
+.contact-in{position:relative;display:flex;flex-direction:column;align-items:center;gap:22px}
+.contact h2{font-size:clamp(32px,4vw,54px)}
+.contact p{color:#BDB5AA;max-width:30em}
+.num{font-family:var(--f-label);letter-spacing:.12em;direction:ltr;font-size:18px;color:var(--gold-2);user-select:all}
+.contact .row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+
+/* footer */
+footer{background:var(--noir-2);color:#9D958B;font-size:14px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-block:56px 34px}
+.foot .brand .wm .en{color:#EEE9E1}
+.foot .brand .wm .ar{color:#9D958B}
+.foot h4{margin:0 0 12px;font-family:var(--f-ar-display);font-weight:500;font-size:16px;color:#EEE9E1}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.foot a:hover{color:var(--gold-2)}
+.foot .about{margin-top:16px;max-width:26em}
+.base{border-top:1px solid rgba(255,255,255,.08);padding-block:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
+.base a{color:var(--gold-2)}
+@media (max-width:760px){.foot{grid-template-columns:1fr 1fr}.foot > div:first-child{grid-column:1/-1}}
+
+/* quick view */
+dialog{border:0;padding:0;max-width:min(980px,calc(100vw - 32px));width:100%;background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(20,18,16,.55);backdrop-filter:blur(3px)}
+.qv-in{display:grid;grid-template-columns:1fr 1fr;min-height:0}
+.qv-ph{background:var(--bg);padding:28px}
+.qv-ph .frame{aspect-ratio:4/5;max-width:100%;border-radius:var(--arch);overflow:hidden}
+.qv-ph img{width:100%;height:100%;object-fit:cover}
+.qv-body{padding:44px 40px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.qv-body h3{font-size:32px}
+.qv-body .en{font-family:var(--f-serif);font-style:italic;color:var(--ink-3);font-size:18px;direction:ltr;text-align:right}
+.qv-body p{color:var(--ink-2)}
+.qv-body dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:6px 0;font-size:15px;border-block:1px solid var(--line);padding-block:14px}
+.qv-body dt{color:var(--ink-3)}
+.qv-body dd{margin:0}
+.qv-body .variants .var{color:var(--ink);border-color:var(--line)}
+.qv-body .variants .var[aria-pressed="true"]{border-color:var(--ink);color:var(--ink);background:var(--bg)}
+.qv-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+.x{position:absolute;top:10px;left:10px;width:40px;height:40px;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;z-index:2}
+.x svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.4}
+@media (max-width:760px){.qv-in{grid-template-columns:1fr}.qv-ph{padding:18px 18px 0}.qv-ph .frame{aspect-ratio:1;max-width:340px;margin-inline:auto}.qv-body{padding:24px 20px 26px}.qv-body h3{font-size:26px}}
+
+/* inquiry drawer */
+.scrim{position:fixed;inset:0;background:rgba(20,18,16,.45);z-index:70;opacity:0;pointer-events:none;transition:opacity .3s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;bottom:0;left:0;width:min(420px,100vw);background:var(--paper);z-index:80;display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .45s cubic-bezier(.7,0,.2,1);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px)}
+.drawer.on{transform:none}
+.dr-head{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid var(--line)}
+.dr-head h3{font-size:22px}
+.dr-head .x{position:static}
+.dr-list{flex:1;overflow:auto;padding:8px 22px}
+.dr-item{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding-block:14px;border-bottom:1px solid var(--line)}
+.dr-item .th{width:64px;height:78px;border-radius:var(--arch);overflow:hidden;background:var(--bg)}
+.dr-item .th img{width:100%;height:100%;object-fit:cover}
+.dr-item b{font-family:var(--f-ar-display);font-weight:500;font-size:17px;display:block;line-height:1.35}
+.dr-item small{color:var(--ink-3);font-size:13px}
+.rm{background:none;border:0;color:var(--ink-3);font-size:13px;text-decoration:underline;padding:4px}
+.empty{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:56px 10px;color:var(--ink-2)}
+.empty img{width:46px;opacity:.9}
+.dr-foot{padding:18px 22px 22px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.dr-foot label{font-size:14px;color:var(--ink-2)}
+.dr-foot input{font:inherit;font-size:15.5px;border:1px solid var(--line);padding:11px 13px;background:var(--bg);width:100%;color:var(--ink)}
+.dr-foot input:focus{outline:none;border-color:var(--ink)}
+.dr-foot .btn{width:100%}
+.dr-foot .btn[aria-disabled="true"]{opacity:.35;pointer-events:none}
+.dr-foot .note{font-size:13px;color:var(--ink-3);text-align:center}
+
+.toast{position:fixed;bottom:calc(22px + env(safe-area-inset-bottom,0px));left:50%;translate:-50% 20px;background:var(--ink);color:#fff;font-size:14.5px;padding:12px 22px;z-index:90;opacity:0;transition:opacity .3s,translate .3s;pointer-events:none;white-space:nowrap}
+.toast.on{opacity:1;translate:-50% 0}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+
+</head>
+<body>
+<div dir="rtl" lang="ar">
+
+<div class="topbar"><div class="wrap"><span>اطلبي قطعتك مباشرة عبر واتساب</span><span class="lat">Fine Accessories · CollieH Collection</span></div></div>
+
+<header class="head">
+  <div class="wrap">
+    <div class="head-in">
+      <ul class="nav">
+        <li><a href="#collection">المجموعة</a></li>
+        <li><a href="#story">قصة الثعلب</a></li>
+        <li><a href="#looks">إطلالات</a></li>
+        <li><a href="#contact">تواصلي معنا</a></li>
+      </ul>
+      <a class="brand" href="#top" aria-label="CollieH Collection — الرئيسية">
+        <img src="assets/mark-sm.png" alt="" width="34" height="47">
+        <span class="wm"><span class="en">Collie<b>H</b> Collection</span><span class="ar">كـولـيـه كوليكشـن</span></span>
+      </a>
+      <div class="actions">
+        <button class="icon-btn" type="button" id="open-bag" aria-label="قائمة طلبك">
+          <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="txt">طلبك</span><span class="count" id="count" data-n="0">0</span>
+        </button>
+      </div>
+    </div>
+    <nav class="menu-row" aria-label="أقسام الموقع"><a href="#collection">المجموعة</a><a href="#story">قصة الثعلب</a><a href="#looks">إطلالات</a><a href="#contact">تواصلي معنا</a></nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" style="padding-top:56px">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <span class="label rule">CollieH Collection</span>
+      <h1>تفاصيل صغيرة،<br><span class="gold-text">تُكمل حكايتك.</span></h1>
+      <p class="tag">Pieces that finish your story.</p>
+      <p class="lead">قلادات، أساور، خواتم وأطقم مختارة بعناية لتلائم يومك ومناسباتك. اختاري قطعتك، أضيفيها إلى طلبك، وأرسليه إلينا على واتساب.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#collection">تسوّقي المجموعة</a>
+        <a class="btn btn-ghost" href="#story">قصة الثعلب</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>٤ فئات</b><span>قلادات · أساور · خواتم · أطقم</span></div>
+        <div><b>ذهبي وفضي</b><span>وألوان مجدولة</span></div>
+        <div><b>طلب مباشر</b><span>عبر واتساب</span></div>
+      </div>
+    </div>
+    <div class="arches" aria-hidden="true">
+      <div class="backdrop"></div><div class="outline"></div>
+      <div class="arch a-main"><img src="assets/hero-main.webp" alt="" width="490" height="653" fetchpriority="high"></div>
+      <div class="arch a-sm1"><img src="assets/hero-a.webp" alt="" width="500" height="450"></div>
+      <div class="arch a-sm2"><img src="assets/hero-b.webp" alt="" width="270" height="360"></div>
+      <div class="seal">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="none" stroke="#D9BD84" stroke-width="1" stroke-dasharray="2 5"/><circle cx="60" cy="60" r="43" fill="none" stroke="#D9BD84" stroke-opacity=".45" stroke-width=".8"/></svg>
+        <img src="assets/mark-sm.png" alt="" width="34" height="47">
+      </div>
+      <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i>
+    </div>
+  </div>
+</section>
+
+<div class="cats">
+  <div class="wrap cats-in" id="cats"></div>
+</div>
+
+<section id="collection">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label rule">The Collection</span>
+      <h2>المجموعة</h2>
+      <p>اضغطي على أي قطعة لرؤية تفاصيلها، أو أضيفيها مباشرة إلى طلبك بزر <b>+</b>.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="تصفية حسب الفئة"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap story-in">
+    <div class="ph"><div class="frame"><img src="assets/story.webp" alt="قلادتا الثعلب باللونين الأحمر والأسود" width="520" height="634" loading="lazy"></div></div>
+    <div class="story-copy">
+      <span class="label" style="color:var(--gold-2)">The Fox Pendant</span>
+      <h2>من الكوفية<br><span class="gold-text">إلى العنق.</span></h2>
+      <p>ثعلبٌ صغير مرصّع بالزركون، ذيله منقوش بالشبكة والخطوط المتعرّجة المستوحاة من الكوفية. يأتي بلونين، الأحمر والأسود، على سلسلة بحلقات طويلة.</p>
+      <p>قطعة خفيفة تحمل هوية، تُلبس كل يوم وتصلح هدية لمن تحبين.</p>
+      <div class="pattern" aria-hidden="true"><svg viewBox="0 0 120 28"><path d="M2 8l6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6"/><path d="M2 20h116M2 26h116"/></svg>نقشة الكوفية</div>
+      <div class="variants" role="group" aria-label="اختاري اللون">
+        <button class="var" type="button" data-fox="أحمر" aria-pressed="true"><i style="background:#B3241F"></i>أحمر</button>
+        <button class="var" type="button" data-fox="أسود" aria-pressed="false"><i style="background:#0D0C0B"></i>أسود</button>
+      </div>
+      <div><button class="btn btn-gold" type="button" id="add-fox">أضيفي قلادة الثعلب إلى طلبك</button></div>
+    </div>
+  </div>
+</section>
+
+<div class="promise">
+  <div class="wrap promise-in">
+    <div class="pr"><svg viewBox="0 0 40 40"><path d="M8 15l6-8h12l6 8-12 18z"/><path d="M8 15h24M16 15l4 18 4-18M14 7l2 8M26 7l-2 8"/></svg><h3>اختيار بعناية</h3><p>كل قطعة في المجموعة مختارة لتكون حاضرة في يومك ومناسباتك.</p></div>
+    <div class="pr"><svg viewBox="0 0 40 40"><path d="M20 6a14 14 0 0 0-12 21l-2 7 7-2A14 14 0 1 0 20 6z"/><path d="M15 16c0 5 4 9 9 9l2-2-3-2-2 1c-2-1-3-2-4-4l1-2-2-3z"/></svg><h3>طلب مباشر</h3><p>أضيفي القطع إلى طلبك وأرسليه برسالة واحدة على واتساب.</p></div>
+    <div class="pr"><svg viewBox="0 0 40 40"><rect x="7" y="16" width="26" height="18"/><path d="M5 11h30v5H5zM20 11v23"/><path d="M20 11c-3-6-10-6-8-1 1 2 8 1 8 1zM20 11c3-6 10-6 8-1-1 2-8 1-8 1z"/></svg><h3>فكرة هدية</h3><p>قطع تناسب أعياد الميلاد والمناسبات، ولمن تحبين.</p></div>
+  </div>
+</div>
+
+<section id="looks">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label rule">Looks</span>
+      <h2>إطلالات من المجموعة</h2>
+      <p>تابعي جديد القطع على حساباتنا.</p>
+    </div>
+    <div class="looks" id="looks-grid"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <img src="assets/mark-sm.png" alt="" width="64" height="88" style="width:64px">
+    <span class="label" style="color:var(--gold-2)">Order &amp; Enquiries</span>
+    <h2>لطلب قطعة أو السؤال<br>عن السعر والتوفر</h2>
+    <p>راسلينا على واتساب، أو أضيفي القطع التي أعجبتك إلى طلبك وأرسليها دفعة واحدة.</p>
+    <span class="num" id="num"></span>
+    <div class="row">
+      <a class="btn btn-gold" id="wa-direct" href="#" target="_blank" rel="noopener">راسلينا على واتساب</a>
+      <button class="btn btn-gold" type="button" id="open-bag-2" style="border-color:rgba(238,233,225,.3);color:#EEE9E1">افتحي طلبك</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#top"><img src="assets/mark-sm.png" alt="" width="34" height="47"><span class="wm"><span class="en">Collie<b>H</b> Collection</span><span class="ar">كـولـيـه كوليكشـن</span></span></a>
+      <p class="about">مجوهرات وإكسسوارات مختارة: قلادات، أساور، خواتم وأطقم بلمسة عصرية وروح محلية.</p>
+    </div>
+    <div><h4>المجموعة</h4><ul id="foot-cats"></ul></div>
+    <div><h4>تواصلي</h4><ul><li><a href="#" id="wa-foot" target="_blank" rel="noopener">واتساب</a></li><li><a href="#" id="ig-foot" target="_blank" rel="noopener">إنستغرام</a></li><li><a href="#contact">الطلب والاستفسار</a></li></ul></div>
+  </div>
+  <div class="wrap base"><span class="lat">© <span id="yr">2026</span> CollieH Collection</span><span>تصميم وتطوير <a href="https://hossam.online" target="_blank" rel="noopener">Hossam</a></span></div>
+</footer>
+
+<dialog id="qv" aria-labelledby="qv-title">
+  <button class="x" type="button" id="qv-close" aria-label="إغلاق"><svg viewBox="0 0 16 16"><path d="M2 2l12 12M14 2L2 14"/></svg></button>
+  <div class="qv-in">
+    <div class="qv-ph"><div class="frame"><img id="qv-img" src="assets/serpent.webp" alt=""></div></div>
+    <div class="qv-body">
+      <span class="label" id="qv-cat">Sets</span>
+      <h3 id="qv-title">—</h3>
+      <div class="en" id="qv-en"></div>
+      <p id="qv-desc"></p>
+      <dl><dt>اللون</dt><dd id="qv-tone"></dd><dt>السعر</dt><dd>عند الطلب، نرسله لك على واتساب</dd></dl>
+      <div class="variants" id="qv-vars" role="group" aria-label="اختاري اللون"></div>
+      <div class="qv-actions">
+        <button class="btn" type="button" id="qv-add">أضيفي إلى طلبك</button>
+        <a class="btn btn-ghost" id="qv-ask" href="#" target="_blank" rel="noopener">اسألي عنها على واتساب</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="قائمة طلبك" aria-hidden="true">
+  <div class="dr-head"><h3>طلبك</h3><button class="x" type="button" id="dr-close" aria-label="إغلاق"><svg viewBox="0 0 16 16"><path d="M2 2l12 12M14 2L2 14"/></svg></button></div>
+  <div class="dr-list" id="dr-list"></div>
+  <div class="dr-foot">
+    <label for="cust-name">اسمك</label>
+    <input id="cust-name" autocomplete="name" placeholder="لنعرف لمن نجهّز الطلب">
+    <a class="btn" id="send" href="#" target="_blank" rel="noopener" aria-disabled="true">أرسلي الطلب على واتساب</a>
+    <span class="note">نرد عليك بالسعر والتوفر وطريقة التوصيل.</span>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+</div>
+
+<script>
+document.documentElement.lang="ar";document.documentElement.dir="rtl";
+
+/* ======= إعدادات المتجر: عدّلي هنا ======= */
+const CONFIG={
+  whatsapp:"970590000000",            // رقم واتساب بالصيغة الدولية بدون +
+  whatsappDisplay:"+970 59 000 0000",
+  instagram:"https://instagram.com/"  // رابط حساب إنستغرام
+};
+const CATS=[
+  {id:"necklaces",ar:"قلادات",en:"Necklaces",th:"birdcage"},
+  {id:"bracelets",ar:"أساور",en:"Bracelets",th:"lira-bracelet"},
+  {id:"rings",ar:"خواتم",en:"Rings",th:"lira-ring"},
+  {id:"sets",ar:"أطقم",en:"Sets",th:"clover"}
+];
+const PRODUCTS=[
+  {id:"serpent",cat:"sets",ar:"طقم الأفعى",en:"Serpent Set",tone:"ذهبي مع زركون",desc:"أسوارة مفتوحة وخاتم بتصميم أفعى ملتفّة، مرصّعان بالزركون بعينين خضراوين."},
+  {id:"fox",cat:"necklaces",ar:"قلادة الثعلب",en:"Fox Pendant",tone:"ذهبي مع مينا",desc:"ثعلب مرصّع بالزركون، ذيله منقوش بنقشة مستوحاة من الكوفية، على سلسلة بحلقات طويلة.",variants:["أحمر","أسود"]},
+  {id:"lira-bracelet",cat:"bracelets",ar:"أسوارة الليرات",en:"Lira Bracelet",tone:"ذهبي",desc:"خمس ليرات في إطارات مخرّمة، قطعة تراثية بروح معاصرة."},
+  {id:"birdcage",cat:"necklaces",ar:"قلادة القفص",en:"Birdcage Necklace",tone:"ذهبي",desc:"قفص صغير بداخله عصفور، وعصفور آخر يطير على السلسلة."},
+  {id:"lira-ring",cat:"rings",ar:"خاتم الليرة",en:"Lira Ring",tone:"ذهبي",desc:"ليرة بيضاوية بإطار مجدول، خاتم بحضور لافت."},
+  {id:"emerald-silver",cat:"necklaces",ar:"قلادتا الزمرد والكريستال",en:"Emerald & Crystal Pendants",tone:"فضي",desc:"حجر أخضر مستطيل بإطار لامع، وقلادة كريستال مربعة للإطلالة اليومية.",variants:["الزمرد","الكريستال"]},
+  {id:"butterfly",cat:"sets",ar:"طقم الفراشة",en:"Butterfly Set",tone:"ذهبي مع كريستال",desc:"قلادة نصفها سلسلة كوبية ونصفها كريستال بفراشة ذهبية، مع أسوارة متناسقة."},
+  {id:"braid",cat:"sets",ar:"الضفيرة الثلاثية",en:"Tri-Tone Braid",tone:"ذهبي · روز · فضي",desc:"ثلاثة ألوان مجدولة في قلادة وأسوارة، تناسب كل الإطلالات."},
+  {id:"clover",cat:"sets",ar:"طقم البرسيم الأسود",en:"Black Clover Set",tone:"ذهبي وأسود",desc:"أوراق برسيم سوداء بإطار ذهبي: قلادة طويلة متدلية وخاتم مفتوح."},
+  {id:"emerald-link",cat:"sets",ar:"طقم الزمرد",en:"Emerald Link Set",tone:"ذهبي وأخضر",desc:"سلسلة كوبية بأحجار خضراء ونقشة المفتاح، مع أسوارة وحلق متناسقين."}
+];
+/* ======================================= */
+
+const $=s=>document.querySelector(s);
+const img=id=>`assets/${id}.webp`;
+const byId=Object.fromEntries(PRODUCTS.map(p=>[p.id,p]));
+const catOf=id=>CATS.find(c=>c.id===id);
+const wa=text=>`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+const store={get(){try{return JSON.parse(localStorage.getItem("collieh-bag")||"[]")}catch(e){return []}},set(v){try{localStorage.setItem("collieh-bag",JSON.stringify(v))}catch(e){}}};
+let bag=store.get().filter(i=>byId[i.id]);
+
+/* categories strip + footer */
+$("#cats").innerHTML=CATS.map(c=>`<button class="cat" type="button" data-cat="${c.id}"><span class="th"><img src="${img(c.th)}" alt="" loading="lazy"></span><span><b>${c.ar}</b><span>${c.en}</span></span></button>`).join("");
+$("#foot-cats").innerHTML=CATS.map(c=>`<li><a href="#collection" data-cat="${c.id}">${c.ar}</a></li>`).join("");
+
+/* filters + grid */
+let current="all";
+function renderFilters(){
+  const all=[{id:"all",ar:"الكل"},...CATS];
+  $("#filters").innerHTML=all.map(c=>{const n=c.id==="all"?PRODUCTS.length:PRODUCTS.filter(p=>p.cat===c.id).length;return `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${current===c.id}">${c.ar} <span style="opacity:.55">(${n})</span></button>`}).join("");
+}
+function renderGrid(){
+  const list=current==="all"?PRODUCTS:PRODUCTS.filter(p=>p.cat===current);
+  $("#grid").innerHTML=list.map(p=>{const inBag=bag.some(i=>i.id===p.id);return `
+  <article class="card">
+    <button class="ph" type="button" data-qv="${p.id}" aria-label="تفاصيل ${p.ar}"><img src="${img(p.id)}" alt="${p.ar}" loading="lazy"><span class="qv">عرض التفاصيل</span></button>
+    <div class="meta">
+      <div><h3>${p.ar}</h3><div class="en">${p.en}</div><div class="tone">${p.tone}</div></div>
+      <button class="add" type="button" data-add="${p.id}" data-in="${inBag}" aria-label="${inBag?"في طلبك":"أضيفي إلى الطلب"}: ${p.ar}"><svg viewBox="0 0 16 16">${inBag?'<path d="M3 8.5l3.2 3L13 4.5"/>':'<path d="M8 2v12M2 8h12"/>'}</svg></button>
+    </div>
+    <span class="price">السعر عند الطلب</span>
+  </article>`}).join("");
+}
+function setCat(c){current=c;renderFilters();renderGrid()}
+document.addEventListener("click",e=>{
+  const c=e.target.closest("[data-cat]");
+  if(c){setCat(c.dataset.cat);if(!c.closest("#filters"))$("#collection").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});}
+  const a=e.target.closest("[data-add]");
+  if(a){const p=byId[a.dataset.add];if(bag.some(i=>i.id===p.id)){openBag()}else{addToBag(p.id,p.variants?p.variants[0]:"")}}
+  const q=e.target.closest("[data-qv]");
+  if(q)openQV(q.dataset.qv);
+});
+renderFilters();renderGrid();
+
+/* looks */
+$("#looks-grid").innerHTML=["butterfly","emerald-silver","braid","birdcage","clover","serpent"].map(id=>`<button class="look" type="button" data-qv="${id}" aria-label="${byId[id].ar}"><img src="${img(id)}" alt="" loading="lazy"></button>`).join("");
+
+/* bag */
+function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>el.classList.remove("on"),2200)}
+function addToBag(id,variant){
+  const ex=bag.find(i=>i.id===id&&i.v===variant);
+  if(!ex)bag.push({id,v:variant||""});
+  store.set(bag);renderBag();renderGrid();
+  toast(`أُضيفت ${byId[id].ar}${variant?" ("+variant+")":""} إلى طلبك`);
+}
+function renderBag(){
+  $("#count").textContent=bag.length;$("#count").dataset.n=bag.length;
+  const list=$("#dr-list");
+  if(!bag.length){list.innerHTML=`<div class="empty"><img src="assets/mark-sm.png" alt=""><b>طلبك فارغ</b><span>أضيفي القطع التي أعجبتك من المجموعة بزر +</span><a class="link" href="#collection" id="go-col">تصفّحي المجموعة</a></div>`}
+  else list.innerHTML=bag.map((i,k)=>{const p=byId[i.id];return `<div class="dr-item"><span class="th"><img src="${img(p.id)}" alt=""></span><div><b>${p.ar}</b><small>${p.en}${i.v?" · "+i.v:""}</small></div><button class="rm" type="button" data-rm="${k}">إزالة</button></div>`}).join("");
+  updateSend();
+}
+function updateSend(){
+  const s=$("#send");const name=$("#cust-name").value.trim();
+  s.setAttribute("aria-disabled",bag.length?"false":"true");
+  const lines=bag.map((i,k)=>`${k+1}. ${byId[i.id].ar} (${byId[i.id].en})${i.v?" — "+i.v:""}`).join("\n");
+  s.href=wa(`مرحبًا CollieH Collection${name?"، أنا "+name:""}.\nأرغب بطلب القطع التالية:\n${lines}\n\nأرجو تأكيد السعر والتوفر وطريقة التوصيل.`);
+}
+$("#cust-name").addEventListener("input",updateSend);
+$("#dr-list").addEventListener("click",e=>{const r=e.target.closest("[data-rm]");if(r){bag.splice(+r.dataset.rm,1);store.set(bag);renderBag();renderGrid()}if(e.target.closest("#go-col"))closeBag()});
+function openBag(){$("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#drawer").setAttribute("aria-hidden","false");setTimeout(()=>$("#dr-close").focus(),50)}
+function closeBag(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on");$("#drawer").setAttribute("aria-hidden","true")}
+$("#open-bag").onclick=openBag;$("#open-bag-2").onclick=openBag;$("#dr-close").onclick=closeBag;$("#scrim").onclick=closeBag;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeBag()});
+renderBag();
+
+/* quick view */
+const qv=$("#qv");let qvItem=null,qvVar="";
+function openQV(id){
+  const p=byId[id];qvItem=p;qvVar=p.variants?p.variants[0]:"";
+  $("#qv-img").src=img(p.id);$("#qv-img").alt=p.ar;
+  $("#qv-title").textContent=p.ar;$("#qv-en").textContent=p.en;$("#qv-desc").textContent=p.desc;$("#qv-tone").textContent=p.tone;
+  $("#qv-cat").textContent=catOf(p.cat).en;
+  const v=$("#qv-vars");v.hidden=!p.variants;
+  v.innerHTML=(p.variants||[]).map((x,i)=>`<button class="var" type="button" data-v="${x}" aria-pressed="${i===0}">${x}</button>`).join("");
+  updateAsk();
+  if(qv.showModal)qv.showModal();else qv.setAttribute("open","");
+}
+function updateAsk(){$("#qv-ask").href=wa(`مرحبًا CollieH Collection، أسأل عن ${qvItem.ar} (${qvItem.en})${qvVar?" — "+qvVar:""}. ما السعر والتوفر؟`)}
+$("#qv-vars").addEventListener("click",e=>{const b=e.target.closest("[data-v]");if(!b)return;qvVar=b.dataset.v;$("#qv-vars").querySelectorAll(".var").forEach(x=>x.setAttribute("aria-pressed",x===b));updateAsk()});
+$("#qv-add").onclick=()=>{addToBag(qvItem.id,qvVar);qv.close()};
+$("#qv-close").onclick=()=>qv.close();
+qv.addEventListener("click",e=>{if(e.target===qv)qv.close()});
+
+/* story variant */
+let fox="أحمر";
+document.querySelectorAll("[data-fox]").forEach(b=>b.addEventListener("click",()=>{fox=b.dataset.fox;document.querySelectorAll("[data-fox]").forEach(x=>x.setAttribute("aria-pressed",x===b))}));
+$("#add-fox").onclick=()=>addToBag("fox",fox);
+
+/* contact */
+$("#num").textContent=CONFIG.whatsappDisplay;
+const hi=wa("مرحبًا CollieH Collection، أرغب بالاستفسار عن قطعة.");
+$("#wa-direct").href=hi;$("#wa-foot").href=hi;$("#ig-foot").href=CONFIG.instagram;
+$("#yr").textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>
